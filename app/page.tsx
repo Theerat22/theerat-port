@@ -29,11 +29,7 @@ export default function Home() {
         ]}
       />
       <div className="lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[75rem]">
-
-
-        {/* <div className="mt-28 mx-auto ">
-          <Contact />
-        </div> */}
+        <Info />
       </div>
       
     </>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
+import { FaInfo } from "react-icons/fa";
 import Theerat from "@/public/sittha.JPG";
 import Link from "next/link";
 // import Rectangle from "../public/Rectangle.svg";
@@ -37,6 +38,17 @@ const Info = () => {
             <BsArrowUpRight className="stroke-1 h-3" />
           </Link>
         </h3>
+      </div>
+      <div className="flex flex-col justify-start mt-10">
+        <div className="flex">
+          <h1 className="flex text-2xl font-bold md:text-2xl lg:text-2xl">Infomation</h1> 
+          {/* <FaInfo className="flex text-xl font-bold md:text-2xl lg:text-2xl" /> */}
+        </div>
+
+        <p className="mt-1 ">Name :Theeratdolchat Chatchai</p>
+        <p className="mt-1 ">Program : English - Chinese</p>
+        <p className="mt-1 ">Birthdate : 25 September 2007</p>
+        <p className="mt-1 ">Nationality : Thai</p>
       </div>
     
   </div>

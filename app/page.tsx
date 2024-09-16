@@ -5,7 +5,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Info from "@/components/Info";
 
-
 export default function Home() {
 
   return (
@@ -21,10 +20,10 @@ export default function Home() {
             name: "Home",
             path: "#home",
           },
-          { name: "Booking", path: "#booking" },
+          { name: "Portfolio", path: "#portfolio" },
           {
-            name: "Your Booking",
-            path: "#your-booking",
+            name: "Activities",
+            path: "#activities",
           },
         ]}
       />

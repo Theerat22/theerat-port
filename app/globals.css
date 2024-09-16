@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Sukhumvit', sans-serif;
+  font-family: Sukhumvit, sans-serif;
 }
 
 @layer utilities {
@@ -28,7 +28,41 @@ body {
 
 @font-face {
   font-family: 'Sukhumvit';
-  src: url('/theerat-port/public/fonts/SukhumvitSet-Medium.ttf') format('truetype');
+  src: url('../public/fonts/SukhumvitSet-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 } 
+@font-face {
+  font-family: 'Sukhumvit';
+  src: url('../public/fonts/SukhumvitSet-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+} 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 1s ease-out;
+}

@@ -18,9 +18,9 @@ export default function Home() {
         items={[
           {
             name: "Home",
-            path: "#home",
+            path: "/home",
           },
-          { name: "Portfolio", path: "#portfolio" },
+          { name: "Portfolio", path: "/portfolio" },
           {
             name: "Activities",
             path: "#activities",

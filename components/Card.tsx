@@ -1,22 +1,31 @@
-import {Card, CardHeader, Image} from "@nextui-org/react";
-import Cat from "@/public/images.jpeg";
-export default function PortfolioCard() {
-    return (
-        <div className="mt-5">
-            <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 ">
-                <Card className="col-span-12 sm:col-span-4 h-[300px]">
-                    <CardHeader className=" z-10 top-1 flex-col !items-start">
-                        <p className="text-tiny text-white/60 uppercase font-bold">What to watch</p>
-                        <h4 className="text-white font-medium text-large">Stream the Acme event</h4>
-                    </CardHeader>
-                    <Image
-                    removeWrapper
-                    alt="Card background"
-                    className="z-0 w-full h-full object-cover"
-                    src={Cat}
-                    />
-                </Card>
-            </div>
-        </div>
-    );
+import Link from 'next/link';
+import { FaGavel } from 'react-icons/fa';
+import { FaTree, FaEarthAsia, FaStar } from "react-icons/fa6";
+import { GiCookingPot } from "react-icons/gi";
+import { BiMath } from "react-icons/bi";
+export default function IconGrid() {
+  const items = [
+    { icon: <FaTree size={60} />, title: 'ภูมิศาสตร์', href: '/geo' },
+    { icon: <FaEarthAsia size={60} />, title: 'ภูมิศาสตร์เศรษฐกิจโลก', href: '/geo-eco' },
+    { icon: <BiMath  size={60} />, title: 'คณิตศาสตร์', href: '/math' },
+    { icon: <GiCookingPot size={60} />, title: 'สร้างสรรค์งานฝีมือ', href: '/cooking' },
+    { icon: <FaStar size={60} />, title: 'ดาราศาสตร์', href: '/astro' },
+    
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col items-center mt-10">
+      <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-3 lg:grid-cols-4">
+        {items.map((item, index) => (
+          <Link key={index} href={item.href} className="flex flex-col items-center transform hover:scale-110 transition duration-300">
+            
+              <div className="p-4 border rounded-full">
+                {item.icon}
+              </div>
+              <p className="mt-4 text-lg">{item.title}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }

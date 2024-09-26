@@ -47,9 +47,13 @@ const Info = () => {
 
 
       <div className="flex flex-col sm:flex-row justify-center mt-20 gap-4">
-        <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600">
-          Portfolio
-        </Button>
+
+        <a href="/portfolio">
+          <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600" >
+            Portfolio
+          </Button>
+        </a>
+
         <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600">
           Activities
         </Button>

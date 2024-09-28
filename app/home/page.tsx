@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Info from "@/components/Info";
-
+import Footer from "@/components/Footer";
 export default function Home() {
 
   return (
@@ -30,7 +30,7 @@ export default function Home() {
       <div className="lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[75rem]">
         <Info />
       </div>
-      
+      <Footer/>
     </>
   );
 }

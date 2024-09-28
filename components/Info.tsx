@@ -18,7 +18,8 @@ const Info = () => {
           alt="Sittha"
           width={180}
           height={180}
-          className="mx-auto aspect-square overflow-hidden object-cover object-center rounded-full border"
+          className="mx-auto aspect-square overflow-hidden object-cover object-center rounded-full border 
+            md:w-48 md:h-48 lg:w-64 lg:h-64"
         />
       </div>
 
@@ -46,18 +47,20 @@ const Info = () => {
       </div>
 
 
-      <div className="flex flex-col sm:flex-row justify-center mt-20 gap-4">
+      <div className="flex justify-center mt-14 gap-4">
 
-        <a href="/portfolio">
+        <Link href="/portfolio">
           <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600" >
             Portfolio
           </Button>
-        </a>
-
+        </Link>
+        <Link href="/activities">
         <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600">
           Activities
         </Button>
+        </Link>
       </div>
+      
     </div>
   );
 };

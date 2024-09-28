@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "tailwindcss" :"3.4.13",
+    "postcss": "8.4.16",
     "@headlessui/react": "^2.1.8",
     "@nextui-org/card": "^2.0.34",
     "@nextui-org/react": "^2.4.8",

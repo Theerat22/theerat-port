@@ -35,7 +35,7 @@ export default function geo() {
       />
       <div className="lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[75rem]">
         <div className="justify-center mt-20">
-            <h1 className="text-3xl text-center md:text-4xl font-semibold mb-4 lg:text-5xl mb-20">
+            <h1 className="text-3xl text-center md:text-4xl font-semibold mb-4 lg:text-5xl ">
                 ภูมิศาสตร์เศรษฐกิจโลก
             </h1>
         </div>

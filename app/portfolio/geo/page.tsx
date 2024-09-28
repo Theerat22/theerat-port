@@ -34,7 +34,7 @@ export default function geo() {
       />
       <div className="lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[75rem]">
         <div className="justify-center mt-24">
-            <h1 className="text-4xl text-center md:text-5xl font-semibold mb-4 lg:text-6xl mb-20">
+            <h1 className="text-4xl text-center md:text-5xl font-semibold mb-4 lg:text-6xl ">
                 ภูมิศาสตร์
             </h1>
         </div>

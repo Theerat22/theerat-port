@@ -15,7 +15,7 @@ export default function geo() {
         items={[
           {
             name: "Home",
-            path: "/home",
+            path: "#home",
           },
           { name: "Portfolio", path: "#" },
           {

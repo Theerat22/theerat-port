@@ -19,7 +19,7 @@ export default function Port() {
         items={[
           {
             name: "Home",
-            path: "/home",
+            path: "#home",
           },
           { name: "Portfolio", path: "#" },
           {

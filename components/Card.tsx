@@ -17,7 +17,7 @@ export default function IconGrid() {
 
   return (
     <div className="min-h-screen flex flex-col items-center mt-10 lg:mt-17">
-      <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-3 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-2 gap-8 text-center lg:grid-cols-3 ">
         {items.map((item, index) => (
           <Link key={index} href={item.href} className="flex flex-col items-center transform hover:scale-110 transition duration-300">
             

@@ -3,7 +3,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { Button } from '@headlessui/react';
 import Sittha from "@/public/sittha.JPG";
 import Link from "next/link";
-
+import { MdPortrait } from "react-icons/md";
+import { HiUserGroup } from "react-icons/hi2";
 const Info = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 lg:py-16">
@@ -38,29 +39,41 @@ const Info = () => {
 
 
       <div className="mt-20" id="personal">
-        <h1 className="text-2xl font-bold mb-2">Personal Information</h1>
-        <p className="text-lg mb-1">ชื่อ : ธีรัตม์ดลฉัตร ฉัตรชัย</p>
-        <p className="text-lg mb-1">แผนการเรียน : English - Chinese</p>
+        <h1 className="text-2xl font-bold mb-2">ข้อมูลส่วนตัว</h1>
+        <p className="text-lg mb-1">ชื่อ : ม.ล.ธีรัตม์ดลฉัตร ฉัตรชัย</p>
+        <p className="text-lg mb-1">ชื่อเล่น : สิทธา</p>
+        <p className="text-lg mb-1">อายุ : 17 ปี</p>
+        <p className="text-lg mb-1">แผนการเรียน : ศิลป์-ภาษาจีน</p>
         <p className="text-lg mb-1">วันเกิด : 25 กันยายน 2550</p>
         <p className="text-lg mb-1">สัญชาติ : ไทย</p>
         <p className="text-lg">งานอดิเรก : เขียนโปรแกรม ฟังเพลง เล่นกีตาร์</p>
       </div>
 
-
-      <div className="flex justify-center mt-14 gap-4">
-
-        <Link href="/portfolio">
-          <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600" >
-            Portfolio
-          </Button>
-        </Link>
-        <Link href="/activities">
-        <Button className="rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-2 px-4 text-lg font-bold text-white hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600">
-          Activities
-        </Button>
-        </Link>
+      <div className="mt-20" id="family">
+        <h1 className="text-2xl font-bold mb-2">ข้อมูลครอบครัว</h1>
+        <p className="text-lg mb-1">บิดา : ม.ร.ว.บวรฉัตร ฉัตรชัย</p>
+        <p className="text-lg mb-1">มารดา : นางจีรนุช ฉัตรชัย ณ อยุธยา</p>
       </div>
-      
+
+
+
+      <div className="grid grid-cols-2 gap-2 text-center mt-20 ">
+        <Link href="/portfolio" className="flex flex-col items-center transform hover:scale-110 transition duration-300">
+            <div className="p-4 border rounded-full">
+              <MdPortrait size={60} />
+            </div>
+            <p className="mt-4 text-lg">Portfolio</p>
+        </Link>
+
+        <Link href="/activities" className="flex flex-col items-center transform hover:scale-110 transition duration-300">
+            <div className="p-4 border rounded-full">
+              <HiUserGroup size={60} />
+            </div>
+            <p className="mt-4 text-lg">Activities</p>
+        </Link>
+
+      </div>
+
     </div>
   );
 };

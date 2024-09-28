@@ -6,12 +6,12 @@ import { BiMath } from "react-icons/bi";
 import { CiMusicNote1 } from "react-icons/ci";
 export default function IconGrid() {
   const items = [
-    { icon: <FaTree size={60} />, title: 'ภูมิศาสตร์', href: '/geo' },
-    { icon: <FaEarthAsia size={60} />, title: 'ภูมิศาสตร์เศรษฐกิจโลก', href: '/geo-eco' },
-    { icon: <BiMath  size={60} />, title: 'คณิตศาสตร์', href: '/math' },
-    { icon: <GiCookingPot size={60} />, title: 'สร้างสรรค์งานฝีมือ', href: '/cooking' },
-    { icon: <FaStar size={60} />, title: 'ดาราศาสตร์', href: '/astro' },
-    { icon: <CiMusicNote1 size={60} />, title: 'ดนตรีสากล', href: '/music' },
+    { icon: <FaTree size={60} />, title: 'ภูมิศาสตร์', href: 'portfolio/geo' },
+    { icon: <FaEarthAsia size={60} />, title: 'ภูมิศาสตร์เศรษฐกิจโลก', href: 'portfolio/geo-eco' },
+    { icon: <BiMath  size={60} />, title: 'คณิตศาสตร์', href: 'portfolio/math' },
+    { icon: <GiCookingPot size={60} />, title: 'สร้างสรรค์งานฝีมือ', href: 'portfolio/cooking' },
+    { icon: <FaStar size={60} />, title: 'ดาราศาสตร์', href: 'portfolio/astro' },
+    { icon: <CiMusicNote1 size={60} />, title: 'ดนตรีสากล', href: 'portfolio/music' },
 
   ];
 
